@@ -4,7 +4,7 @@ import { kebabCase } from 'lodash';
 import { ArticalStyle } from '../components/styles';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 import Content, { HTMLContent } from '../components/Content';
 
 export const BlogPostTemplate = ({
