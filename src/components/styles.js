@@ -78,7 +78,7 @@ padding: 10px 5px;
     background: transparent;
     color: #fff;
     height: 40px;
-    width: 55%;
+    width: 50%;
     font-size: 16px;
     text-indent: 5px;
     transition: all 0.5s ease;
