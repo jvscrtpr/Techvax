@@ -14,7 +14,7 @@ export default class IndexPage extends React.Component {
       <React.Fragment>
         <Sidebar />
         <ContentStyle>
-          <h1>How to</h1>
+          <h1>How to's</h1>
           {posts.map(({ node: post }) => <Card card={post} />)}
         </ContentStyle>
       </React.Fragment>
