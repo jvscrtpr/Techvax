@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Banner from '../components/banner';
 import Card from '../components/card';
-import Sidebar from '../components/Sidebar';
+import Sidebar from '../components/sidebar';
 import { ContentStyle } from '../components/styles';
 
 export default class IndexPage extends React.Component {
