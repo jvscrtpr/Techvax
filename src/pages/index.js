@@ -17,7 +17,7 @@ export default class IndexPage extends React.Component {
       ({ node: val }) => val.frontmatter.category == 'how-to'
     );
     const reviews = posts.filter(
-      ({ node: val }) => val.frontmatter.category == 'reviews'
+      ({ node: val }) => val.frontmatter.category == 'review'
     );
     const blog = posts.filter(
       ({ node: val }) => val.frontmatter.category == 'blog'
