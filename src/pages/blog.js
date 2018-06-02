@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import Banner from '../components/banner';
 import Card from '../components/card';
 import Sidebar from '../components/sidebar';
 import { ContentStyle } from '../components/styles';
@@ -15,7 +14,6 @@ export default class IndexPage extends React.Component {
       <React.Fragment>
         <Sidebar />
         <ContentStyle>
-          <Banner />
           <h1>Blog</h1>
           {posts.map(({ node: post }) => <Card card={post} />)}
         </ContentStyle>
