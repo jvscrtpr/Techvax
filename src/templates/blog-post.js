@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
   return (
     <ArticalStyle>
       {helmet || ''}
-      <h1>{title}</h1>
+      <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
       <PostContent content={content} />
       {tags && tags.length ? (
         <div style={{ marginTop: `4rem` }}>
