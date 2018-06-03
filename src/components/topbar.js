@@ -27,7 +27,7 @@ class Topbar extends Component{
         <a href='/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
         <a><FontAwesomeIcon icon={faRss} /></a>
         <span id='search-mobile' onClick={this.props.SearchMobile}><FontAwesomeIcon icon={faSearch} /></span>
-        <input onChange={this.props.searchChange} value={this.props.search} type='text' placeholder='Search Techvax...' className='search' />
+        <input type='text' placeholder='Search Techvax...' className='search' />
       </ul>
     </TopbarStyle>
     );
