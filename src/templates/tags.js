@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 
-const btnStyle = styled.button`
+/*const btnStyle = styled.button`
 outline: none;
 cursor: pointer;
 border: none;
@@ -22,7 +22,7 @@ font-size: 20px;
     -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
     transition: 0.5s;
 }
-`;
+`;*/
 
 class TagRoute extends React.Component {
   render() {
@@ -52,7 +52,9 @@ class TagRoute extends React.Component {
             >
               <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
               <ul className="taglist">{postLinks}</ul>
-              <Link to="/tags/"><button style={btnStyle}>Browse all tags</button></Link>
+              <p>
+                <Link to="/tags/">Browse all tags</Link>
+              </p>
             </div>
           </div>
         </div>
