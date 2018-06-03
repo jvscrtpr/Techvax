@@ -6,7 +6,7 @@ class SearchMobile extends Component{
     return(
     <React.Fragment>
       {this.props.open ? <SearchStyle>
-        <input onChange={this.props.searchChange} value={this.props.search} type='text' placeholder='Search Techvax...' className='search' />
+        <input type='text' placeholder='Search Techvax...' className='search' />
       </SearchStyle> : null }
     </React.Fragment>
     );
