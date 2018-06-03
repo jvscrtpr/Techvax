@@ -196,6 +196,141 @@ padding: 10px 5px;
     }
 }
 `;
+export const SubscribeStyle = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: rgba(0,0,0,0.8);
+height: 100%;
+width: 100%;
+text-align: center;
+z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+& #close {
+    cursor: pointer;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+& #close:hover {
+    color: #ff4081;
+    transition: 0.5s;
+}
+& ul {
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    height: auto;
+    width: 35%;
+    padding: 10px;
+}
+& P {
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+& .subbar {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    background: #fff;
+    color: #000;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-indent: 5px;
+    transition: all 0.5s ease;
+}
+& .subbar::-webkit-input-placeholder {
+    color: #000;
+    transition: all 0.5s ease;
+}
+& .subbar::-moz-placeholder {
+    color: #000;
+    transition: all 0.5s ease;
+}
+& .subbar:-ms-input-placeholder {
+    color: #000;
+    transition: all 0.5s ease;
+}
+& .subbar:-o-input-placeholder {
+    color: #000;
+    transition: all 0.5s ease;
+}
+& .subbar:focus {
+    border-bottom: 2px solid #ff4081;
+    transition: all 0.5s ease;
+}    
+& .subbar:focus::-webkit-input-placeholder {
+    border-bottom: 2px solid #ff4081;
+    color: transparent;
+    transition: all 0.5s ease;
+}
+& .subbar:focus::-moz-placeholder {
+    border-bottom: 2px solid #ff4081;
+    color: transparent;
+    transition: all 0.5s ease;
+}
+& .subbar:-moz-placeholder {
+    color: transparent;
+    transition: all 0.5s ease;
+}
+& .btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background: #ff4081;
+    color: #fff;
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+}
+& .btn:hover {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    transition: 0.5s;
+}
+@media (max-width: 736px){
+    & #close {
+        position: absolute;
+        top: 0;
+        right: 5px;
+    }
+    & ul {
+        width: 90% !important;
+    }
+    & P {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    & .btn {
+        width: 90%;
+    }
+}
+@media (max-width: 991px){
+    & ul {
+        width: 50%;
+    }
+}
+`;
 export const SearchStyle = styled.div`
 background: #333;
 height: auto;
@@ -797,11 +932,20 @@ text-align: center;
     margin: 0 1vw;
     text-decoration: none;
 }
-& p {
+& ul {
     background: rgba(119,141,159,0.1);
+    padding: 10px;
+}
+& ul p {
     color: #fff;
-    padding: 15px;
+    margin-bottom: 10px;
     font-size: 15px;
+}
+& .searchlogo {
+    border-radius: 6px;
+    background: #899FA9;
+    height: 25px;
+    padding: 10px;
 }
 @media (max-width: 736px){
     & #pagelinks a, a {
