@@ -8,12 +8,12 @@ class Menu extends Component{
     <React.Fragment>
       {this.props.open ? <MenuStyle>
         {this.props.children}
-        <Link to='/'>Home</Link>
-        <Link to='/news'>News</Link>
-        <Link to='/howto'>How To's</Link>
-        <Link to='/reviews'>Reviews</Link>
-        <Link to='/blog'>Blog</Link>
-        <Link to='/error'>Shop</Link>
+        <Link to='/' onClick={this.props.Menu}>Home</Link>
+        <Link to='/news' onClick={this.props.Menu}>News</Link>
+        <Link to='/howto' onClick={this.props.Menu}>How To's</Link>
+        <Link to='/reviews' onClick={this.props.Menu}>Reviews</Link>
+        <Link to='/blog' onClick={this.props.Menu}>Blog</Link>
+        <Link to='/error' onClick={this.props.Menu}>Shop</Link>
       </MenuStyle> : null }
     </React.Fragment>
     );
