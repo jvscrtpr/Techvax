@@ -21,7 +21,7 @@ class Footer extends Component{
       <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>&bull;
       <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>&bull;
       <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>
-      <p>&copy; 2018 | Techvax.com  <img src={ require('../img/search-by-algolia.png') } alt='' style={{ height: 30 + 'px' }} /></p>
+      <p>&copy; 2018 | Techvax.com  <img src={ require('../img/search-by-algolia.png') } alt='' style={{ display: 'inline-block', height: 30 + 'px' }} /></p>
     </FooterStyle>
     );
   }
