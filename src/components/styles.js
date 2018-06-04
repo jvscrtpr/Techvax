@@ -3,7 +3,10 @@ import styled from 'styled-components';
 export const TopbarStyle = styled.div`
 background: #333;
 height: auto;
-padding: 10px 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 5px;
+padding-right: 0;
 & #open {
     display: none;
 }
@@ -53,8 +56,10 @@ padding: 10px 5px;
     padding: 5px;
     position: relative;
     top: 4px;
+    right: 65px;
 }
 & ul a {
+    cursor: pointer;
     color: #fff;
     margin: 0 1vw;
     font-size: 23px;
@@ -67,62 +72,24 @@ padding: 10px 5px;
     color: #ff4081;
     transition: 0.5s;
 }
-& #search-mobile {
-    display: none;
-}
-& .search {
-    display: inline-block;
-    outline: none;
-    border: none;
-    border-left: 2px solid #ddd;
-    background: transparent;
+& #searchbtn {
+    display: inline-block !important;
+    cursor: pointer;
+    background: linear-gradient(50deg, #12c2e9, #c471ed, #f64f59);
     color: #fff;
-    height: 40px;
-    width: 50%;
-    font-size: 16px;
-    text-indent: 5px;
-    transition: all 0.5s ease;
-    position: relative;
-    top: -3px;
+    margin: 0 !important;
+    padding: 21px 25px;
+    font-size: 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
-& .search::-webkit-input-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search::-moz-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search:-ms-input-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search:-o-input-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search:focus {
-    border-left: 2px solid #ff4081;
-    transition: all 0.5s ease;
-}    
-& .search:focus::-webkit-input-placeholder {
-    border-left: 2px solid #ff4081;
-    color: transparent;
-    transition: all 0.5s ease;
-}
-& .search:focus::-moz-placeholder {
-    border-left: 2px solid #ff4081;
-    color: transparent;
-    transition: all 0.5s ease;
-}
-& .search:-moz-placeholder {
-    color: transparent;
-    transition: all 0.5s ease;
+& #searchbtn a:after {
+    border-bottom: none;
 }
 @media (max-width: 736px){
     padding-top: 0;
     z-index: 998;
-    text-align: center;
     position: sticky;
     top: 0;
     & #open {
@@ -135,9 +102,6 @@ padding: 10px 5px;
         position: relative;
         top: 4px;
     }
-    & .search {
-        display: none;
-    }
     & ul {
         padding-right: 10px;
         position: relitive;
@@ -146,17 +110,8 @@ padding: 10px 5px;
     & ul a {
         display: none !important;
     }
-    & #search-mobile {
-        display: block;
-        cursor: pointer;
-        color: #fff;
-        font-size: 23px;
-        position: relative;
-        top: -2px;
-    }
-    & #search-mobile:hover {
-        color: #ff4081;
-        transition: 0.5s;
+    & #searchbtn {
+        padding: 15px 20px;
     }
 }
 @media (max-width: 991px){
@@ -190,21 +145,66 @@ padding: 10px 5px;
         position: relative;
         top: 4px;
     }
-    & .search {
-        position: relative;
-        top: 0;
-    }
 }
 `;
-export const SubscribeStyle = styled.div`
+export const MenuStyle = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background: rgba(0,0,0,0.8);
+background: #333;
 height: 100%;
 width: 100%;
 text-align: center;
+overflow: auto;
+z-index: 999;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+& #close {
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+& #close:hover {
+    color: #ff4081;
+    transition: 0.5s;
+}
+& a {
+    display: block;
+    color: #fff;
+    margin: 5px;
+    padding: 20px 3px;
+    font-size: 18px;
+    text-decoration: none;
+}
+& a:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #ff4081;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+& a:hover:after { 
+    transform: scaleX(1);
+}
+`;
+export const SearchStyle = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(50deg, #12c2e9, #c471ed, #f64f59);
+height: 100%;
+width: 100%;
+text-align: center;
+overflow: auto;
 z-index: 999;
 position: fixed;
 top: 0;
@@ -217,158 +217,23 @@ bottom: 0;
     font-size: 35px;
     font-weight: bold;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 0;
+    right: 10px;
 }
-& #close:hover {
-    color: #ff4081;
-    transition: 0.5s;
-}
-& ul {
-    border-radius: 6px;
-    background: #fff;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    height: auto;
-    width: 35%;
-    padding: 10px;
-}
-& P {
-    color: #000;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    font-size: 20px;
-}
-& .subbar {
-    outline: none;
-    border: none;
-    border-bottom: 2px solid #ddd;
-    background: #fff;
-    color: #000;
-    height: 40px;
-    width: 90%;
-    margin-bottom: 20px;
-    font-size: 18px;
-    text-indent: 5px;
-    transition: all 0.5s ease;
-}
-& .subbar::-webkit-input-placeholder {
-    color: #000;
-    transition: all 0.5s ease;
-}
-& .subbar::-moz-placeholder {
-    color: #000;
-    transition: all 0.5s ease;
-}
-& .subbar:-ms-input-placeholder {
-    color: #000;
-    transition: all 0.5s ease;
-}
-& .subbar:-o-input-placeholder {
-    color: #000;
-    transition: all 0.5s ease;
-}
-& .subbar:focus {
-    border-bottom: 2px solid #ff4081;
-    transition: all 0.5s ease;
-}    
-& .subbar:focus::-webkit-input-placeholder {
-    border-bottom: 2px solid #ff4081;
-    color: transparent;
-    transition: all 0.5s ease;
-}
-& .subbar:focus::-moz-placeholder {
-    border-bottom: 2px solid #ff4081;
-    color: transparent;
-    transition: all 0.5s ease;
-}
-& .subbar:-moz-placeholder {
-    color: transparent;
-    transition: all 0.5s ease;
-}
-& .btn {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 50px;
-    background: #ff4081;
-    color: #fff;
-    width: 50%;
-    padding: 10px;
-    font-size: 18px;
-}
-& .btn:hover {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    transition: 0.5s;
-}
-@media (max-width: 736px){
-    & #close {
-        position: absolute;
-        top: 0;
-        right: 5px;
-    }
-    & ul {
-        width: 90% !important;
-    }
-    & P {
-        margin-top: 0;
-        margin-bottom: 10px;
-    }
-    & .btn {
-        width: 90%;
-    }
-}
-@media (max-width: 991px){
-    & ul {
-        width: 50%;
-    }
-}
-`;
-export const SearchStyle = styled.div`
-background: #333;
-height: auto;
-width: 82%;
-padding: 11px 5px;
-text-align: left;
-z-index: 999;
-position: fixed;
-top: 0;
-left: 0;
 & .search {
     outline: none;
     border: none;
-    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
     background: transparent;
     color: #fff;
-    height: 35px;
-    width: 100%;
-    margin-left: .5%;
+    height: 40px;
+    width: 70%;
     font-size: 16px;
     text-indent: 5px;
+    z-index: 999;
+    position: absolute;
+    top: 60px;
 }
-& .search::-webkit-input-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search::-moz-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search:-ms-input-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}
-& .search:-o-input-placeholder {
-    color: #fff;
-    transition: all 0.5s ease;
-}    
 & .search:focus::-webkit-input-placeholder {
     color: transparent;
     transition: all 0.5s ease;
@@ -382,22 +247,112 @@ left: 0;
     transition: all 0.5s ease;
 }
 & .search:focus {
-    border-left: 2px solid #ff4081;
     transition: all 0.5s ease;
 }    
 & .search:focus::-webkit-input-placeholder {
-    border-left: 2px solid #ff4081;
     color: transparent;
     transition: all 0.5s ease;
 }
 & .search:focus::-moz-placeholder {
-    border-left: 2px solid #ff4081;
     color: transparent;
     transition: all 0.5s ease;
 }
 & .search:-moz-placeholder {
     color: transparent;
     transition: all 0.5s ease;
+}
+& .cards {
+    background: transparent;
+    height: auto;
+    width: 75%;
+    text-align: center;
+    position: absolute;
+    top: 130px;
+}
+& .cards ul {
+    background: #e6e6ef;
+    height: auto; 
+    margin: 10px;
+    text-align: left;
+    overflow: hidden;
+    clear: left;
+}
+& .img {
+    float: left;
+    height: auto;
+    width: 28%;
+}
+& .cards ul a {
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    left: 15px;
+}
+& .cards ul a:hover {
+    color: #ff4081;
+    transition: 0.5s;
+}
+& #arrow {
+    display: none;
+    font-size: 20px;
+}
+& .cards ul a:hover #arrow {
+    display: inline-block;
+}
+& .cards p {
+    color: #555;
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    position: relative;
+    top: 35px;
+    left: 15px;
+}
+@media (max-width: 736px){
+    & .search {
+        position: absolute;
+        top: 30px;
+    }
+    & .cards {
+        position: absolute;
+        top: 80px;
+    }
+    & .cards ul {
+        padding: 0;
+        padding-bottom: 10px;
+        text-align: center !important;
+    }
+    & .img {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    & .cards ul a {
+        margin-bottom: 10px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    & .cards ul a:hover #arrow {
+        display: none;
+    }
+    & .cards ul p {
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 14px;
+    }
+}
+@media (max-width: 991px){
+    & .search {
+        width: 90%;
+    }
+    & .cards {
+        width: auto;
+    }
 }
 `;
 export const TrendbarStyle = styled.div`
@@ -411,7 +366,7 @@ height: auto;
 padding: 15px 0;
 overflow: auto;
 white-space: nowrap;
-z-index: 999;
+z-index: 998;
 position: sticky;
 top: -.5px;
 left: 0;
@@ -449,52 +404,6 @@ right: 0;
 @media (max-width: 736px){
     position: sticky;
     top: 57px;
-}
-`;
-export const MenuStyle = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-background: #333;
-height: 100%;
-width: 100%;
-text-align: center;
-overflow: auto;
-z-index: 999;
-position: fixed;
-top: 0;
-left: 0;
-& #close {
-    cursor: pointer;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-& #close:hover {
-    color: #ff4081;
-    transition: 0.5s;
-}
-& a {
-    display: block;
-    color: #fff;
-    margin: 5px;
-    padding: 20px 3px;
-    font-size: 18px;
-    text-decoration: none;
-}
-& a:after {
-    content: '';
-    display: block;
-    border-bottom: 2px solid #ff4081;  
-    transform: scaleX(0);  
-    transition: transform 250ms ease-in-out;
-}
-& a:hover:after { 
-    transform: scaleX(1);
 }
 `;
 export const BannerStyle = styled.div`
@@ -772,7 +681,7 @@ left: 10px;
     font-size: 52px;
     text-align: left;
 }
-& div #usr {
+& #usr {
     background: #ff4081;
     color: #fff;
     padding: 10px;
@@ -781,10 +690,10 @@ left: 10px;
     position: relative;
     top: -10px;
 }
-& div img{
+& .img {
     width: 100%;
 }
-& div iframe {
+& iframe {
     border: none;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
     -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
@@ -794,34 +703,34 @@ left: 10px;
     height: 315px;
     width: 560px;
 }
-& div #break {
+& #break {
     color: #999;
     font-size: 50px;
 }
-& div p {
+& p {
     color: #000;
     font-size: 18px;
 }
-& div h2 {
+& h2 {
     color: #000;
     margin-bottom: 10px;
     font-size: 35px;
     text-align: left;
 }
-& div .follow {
+& .follow {
     display: none;
     margin-top: 10px;
     padding: 10px;
 }
-& div h3 {
+& h3 {
     color: #000;
     margin-bottom: 10px;
     font-size: 30px;
 }
-& div .follow a {
+& .follow a {
     margin: 0 1vw;
 }
-& div .btn {
+& .btn {
     outline: none;
     cursor: pointer;
     border: none;
@@ -832,7 +741,7 @@ left: 10px;
     width: 48px;
     font-size: 20px;
 }
-& div .btn:hover {
+& .btn:hover {
     background: #ff4081;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
     -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
@@ -841,14 +750,14 @@ left: 10px;
     -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
     transition: 0.5s;
 }
-& div .follow a {
+& .follow a {
     display: inline-block;
     border-bottom: none;
     margin: 0 1vw;
     padding: 0;
 }
 @media (max-height: 414px){
-    & div iframe {
+    & iframe {
         height: 315px !important;
         width: 100%;
     }
@@ -856,14 +765,14 @@ left: 10px;
 @media (max-width: 736px){
     position: relative;
     top: 0;
-    & div iframe {
+    & iframe {
         height: 200px;
         width: 100%;
     }
-    & div h1 {
+    & h1 {
         font-size: 23px;
     }
-    & div #usr {
+    & #usr {
         padding: 5px;
         position: relative;
         top: 0;
@@ -874,7 +783,7 @@ left: 10px;
     margin-bottom: 20px;
     position: relative;
     left: 0;
-    & div .follow {
+    & .follow {
         display: block;
     }
 }
