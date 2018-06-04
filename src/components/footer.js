@@ -23,7 +23,7 @@ class Footer extends Component{
       <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>&bull;
       <ul>
         <p>&copy; 2018 | Techvax.com</p>
-        <img src={require('../images/search-by-algolia.png')} alt='' className='searchlogo' />
+        <img src={require('../img/search-by-algolia.png')} alt='' className='searchlogo' />
       </ul>
     </FooterStyle>
     );
