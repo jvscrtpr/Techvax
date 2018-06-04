@@ -593,7 +593,7 @@ left: 10px;
     text-decoration: none;
     position: relative;
     top: 10px;
-    left: 20px;
+    left: 15px;
 }
 & ul a:hover {
     color: #ff4081;
@@ -613,7 +613,7 @@ left: 10px;
     font-size: 18px;
     position: relative;
     top: 35px;
-    left: 20px;
+    left: 15px;
 }
 @media (max-width: 736px){
     padding: 0;
