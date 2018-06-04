@@ -572,15 +572,18 @@ left: 10px;
     text-align: left;
 }
 & ul {
-    background: #e6e6ef;
+    border-bottom: 1px solid #e6e6ef;
+    background: transparent;
     height: auto; 
     margin: 10px;
+    padding: 10px;
     text-align: left;
     overflow: hidden;
     clear: left;
 }
 & .img {
     float: left;
+    border-radius: 6px;
     height: auto;
     width: 28%;
 }
@@ -589,7 +592,7 @@ left: 10px;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    top: 20px;
+    top: 10px;
     left: 20px;
 }
 & ul a:hover {
@@ -609,13 +612,14 @@ left: 10px;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    top: 45px;
+    top: 35px;
     left: 20px;
 }
 @media (max-width: 736px){
     padding: 0;
     & ul {
         width: auto !important;
+        padding: 0;
         padding-bottom: 10px;
         text-align: center !important;
     }
