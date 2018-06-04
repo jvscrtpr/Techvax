@@ -5,7 +5,6 @@ import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faBars from '@fortawesome/fontawesome-free-solid/faBars';
 import brands from '@fortawesome/fontawesome-free-brands';
-import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 import faSearch from '@fortawesome/fontawesome-free-solid/faSearch';
 fontawesome.library.add(brands);
 
@@ -21,14 +20,12 @@ class Topbar extends Component{
       <Link to='/blog'>Blogs</Link>
       <Link to='/error'>Shop</Link>
       <ul>
-        <a href='/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
-        <a href='/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
-        <a href='/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-        <a href='/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
-        <a onClick={this.props.Subscribe} style={{ cursor: 'pointer' }}><FontAwesomeIcon icon={faRss} /></a>
-        <span id='search-mobile' onClick={this.props.SearchMobile}><FontAwesomeIcon icon={faSearch} /></span>
-        <input type='text' placeholder='Search Techvax...' className='search' />
+        <a href='https://instagram.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
+        <a href='https://instagram.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
+        <a href='https://twitter.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
+        <a href='https://github.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
       </ul>
+      <span id='searchbtn' onClick={this.props.Searchbar}><FontAwesomeIcon icon={faSearch} /></span>
     </TopbarStyle>
     );
   }
