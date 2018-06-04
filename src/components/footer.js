@@ -4,7 +4,6 @@ import { FooterStyle } from './styles';
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
-import faRss from '@fortawesome/fontawesome-free-solid/faRss';
 fontawesome.library.add(brands);
 
 class Footer extends Component{
@@ -18,14 +17,13 @@ class Footer extends Component{
         <Link to='/privacy'>Privacy</Link>
       </span>
       <h1>&bull; Follow us &bull;</h1>
-      <a href='https://bit.ly/2HFWFB2' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></button></a>
-      <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>
-      <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>
-      <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>
-      <a onClick={this.props.Subscribe}><button className='btn'><FontAwesomeIcon icon={faRss} /></button></a>
+      <a href='https://bit.ly/2HFWFB2' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></button></a>&bull;
+      <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>&bull;
+      <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>&bull;
+      <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>&bull;
       <ul>
         <p>&copy; 2018 | Techvax.com</p>
-        <img src={ require('../img/search-by-algolia.png') } alt='' className='searchlogo' />
+        <img src={require('../images/search-by-algolia.png')} alt='' className='searchlogo' />
       </ul>
     </FooterStyle>
     );
