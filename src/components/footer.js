@@ -20,7 +20,7 @@ class Footer extends Component{
       <a href='https://bit.ly/2HFWFB2' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></button></a>&bull;
       <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>&bull;
       <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>&bull;
-      <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>&bull;
+      <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>
       <ul>
         <p>&copy; 2018 | Techvax.com</p>
         <img src={require('../img/search-by-algolia.png')} alt='' className='searchlogo' />
