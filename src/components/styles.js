@@ -483,6 +483,9 @@ left: 10px;
     overflow: hidden;
     clear: left;
 }
+& ul:last-child {
+    border-bottom: none;
+}
 & .img {
     float: left;
     border-radius: 6px;
