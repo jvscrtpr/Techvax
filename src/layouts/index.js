@@ -33,6 +33,8 @@ injectGlobal`
     }
 `;
 
+import '@fortawesome/fontawesome/styles.css'
+
 const TemplateWrapper = ({ children }) => (
  <Layout>
    {children()}
