@@ -56,7 +56,7 @@ padding-right: 0;
     padding: 5px;
     position: relative;
     top: 4px;
-    right: 65px;
+    right: 0;
 }
 & ul a {
     cursor: pointer;
@@ -73,19 +73,9 @@ padding-right: 0;
     transition: 0.5s;
 }
 & #searchbtn {
-    display: inline-block !important;
     cursor: pointer;
-    background: linear-gradient(50deg, #12c2e9, #c471ed, #f64f59);
-    color: #fff;
-    margin: 0 !important;
-    padding: 21px 25px;
-    font-size: 23px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-& #searchbtn a:after {
-    border-bottom: none;
+    border-left: 1px solid #ddd;
+    padding-left: 15px;
 }
 @media (max-width: 736px){
     padding-top: 0;
@@ -105,13 +95,16 @@ padding-right: 0;
     & ul {
         padding-right: 10px;
         position: relitive;
-        top: 13px !important;
+        top: 6px !important;
     }
     & ul a {
         display: none !important;
     }
     & #searchbtn {
-        padding: 15px 20px;
+        display: inline-block !important;
+        cursor: pointer;
+        border-left: none;
+        padding-left: 0;
     }
 }
 @media (max-width: 991px){
