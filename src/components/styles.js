@@ -349,6 +349,8 @@ bottom: 0;
 }
 `;
 export const TrendbarStyle = styled.div`
+border-top: 4px solid hsl(0, 100%, 50%);
+-webkit-animation: rainbow 1s infinite alternate;
 background: #fff;
 box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
