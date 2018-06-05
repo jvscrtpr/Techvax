@@ -26,6 +26,10 @@ injectGlobal`
       border-radius: 10px;
       background: #ff4081;
     }
+    @-webkit-keyframes rainbow {
+      0% {border-color: hsl(0, 100%, 50%);}
+      100% {border-color: hsl(255, 100%, 50%);}
+    }
     @media (max-width: 736px){
       body,html {
         font-family: 'Roboto', sans-serif;
