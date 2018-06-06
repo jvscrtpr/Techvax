@@ -22,6 +22,7 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
       <PostContent content={content} />
+      <img className='img' />
       {tags && tags.length ? (
         <div style={{ marginTop: `4rem` }}>
           <h4>Tags</h4>
