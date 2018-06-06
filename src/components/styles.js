@@ -719,7 +719,7 @@ left: 10px;
     top: -10px;
 }
 & .img {
-    width: 100%;
+    width: 90%;
 }
 & iframe {
     border: none;
