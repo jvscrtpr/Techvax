@@ -315,7 +315,7 @@ bottom: 0;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    left: 15px;
+    left: 13px;
 }
 & .cards ul a:hover {
     color: #ff4081;
@@ -328,13 +328,13 @@ bottom: 0;
 & .cards ul a:hover #arrow {
     display: inline-block;
 }
-& .cards p {
+& .cards ul p {
     color: #555;
     width: 90%;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    left: 15px;
+    left: 13px;
 }
 @media (max-width: 736px){
     & .search {
@@ -359,7 +359,6 @@ bottom: 0;
         margin-bottom: 10px;
         text-align: center;
         position: relative;
-        top: 0;
         left: 0;
     }
     & .cards ul a:hover #arrow {
@@ -368,7 +367,6 @@ bottom: 0;
     & .cards ul p {
         text-align: center;
         position: relative;
-        top: 0;
         left: 14px;
     }
 }
@@ -531,7 +529,7 @@ left: 10px;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    left: 15px;
+    left: 13px;
 }
 & ul a:hover {
     color: #ff4081;
@@ -544,13 +542,13 @@ left: 10px;
 & ul a:hover #arrow {
     display: inline-block;
 }
-& p {
+& ul p {
     color: #555;
     width: 90%;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    left: 15px;
+    left: 13px;
 }
 @media (max-width: 736px){
     padding: 0;
