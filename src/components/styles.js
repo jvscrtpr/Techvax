@@ -315,7 +315,6 @@ bottom: 0;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    top: 10px;
     left: 15px;
 }
 & .cards ul a:hover {
@@ -335,7 +334,6 @@ bottom: 0;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    top: 35px;
     left: 15px;
 }
 @media (max-width: 736px){
