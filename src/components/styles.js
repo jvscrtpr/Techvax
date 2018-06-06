@@ -141,29 +141,55 @@ padding-right: 0;
 }
 `;
 export const MenuStyle = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
 background: #333;
 height: 100%;
-width: 100%;
-text-align: center;
+width: 230px;
+text-align: left;
 overflow: auto;
 z-index: 999;
 position: fixed;
 top: 0;
 left: 0;
-right: 0;
-bottom: 0;
+& #banner {
+    display: block;
+    border-bottom: 1px solid #444;
+    background: trasparent;
+    width: 91.5%;
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 5px;
+    padding-bottom: 12px;
+}
+& #banner p {
+    display: inline-block;
+    background: -webkit-linear-gradient(40deg, #12c2e9, #c471ed, #f64f59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    margin: 0;
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Suez One';
+    -webkit-font-family: 'Suez One';
+    -moz-font-family: 'Suez One';
+    -ms-font-family: 'Suez One';
+    -o-font-family: 'Suez One';
+}
+& #txt {
+    font-family: 'Black Ops One';
+    -webkit-font-family: 'Black Ops One';
+    -moz-font-family: 'Black Ops One';
+    -ms-font-family: 'Black Ops One';
+    -o-font-family: 'Black Ops One';
+}
 & #close {
+    float: right;
+    display: inline-block;
     cursor: pointer;
     color: #fff;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
-    position: absolute;
-    top: 10px;
-    right: 20px;
+    text-align: right;
 }
 & #close:hover {
     color: #ff4081;
@@ -186,6 +212,13 @@ bottom: 0;
 }
 & a:hover:after { 
     transform: scaleX(1);
+    transform-origin: 0% 50%;
+}
+@media (max-width: 736px){
+    & #banner {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }
 `;
 export const SearchStyle = styled.div`
