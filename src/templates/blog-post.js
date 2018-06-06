@@ -21,8 +21,9 @@ export const BlogPostTemplate = ({
     <ArticalStyle>
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
-      <PostContent content={content} />
-      <img className='img' />
+      <PostContent content={content}>
+        <img className='img' />
+      </PostContent>
       {tags && tags.length ? (
         <div style={{ marginTop: `4rem` }}>
           <h4>Tags</h4>
