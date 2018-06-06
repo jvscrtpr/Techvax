@@ -719,7 +719,7 @@ left: 10px;
     position: relative;
     top: -10px;
 }
-& .img {
+& img {
     width: 90%;
 }
 & iframe {
