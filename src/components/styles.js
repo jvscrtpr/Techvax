@@ -452,8 +452,8 @@ box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 height: auto;
-padding-top: 110px;
-padding-bottom: 110px;
+padding-top: 120px;
+padding-bottom: 120px;
 & ul {
     background: #e6e6ef;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
