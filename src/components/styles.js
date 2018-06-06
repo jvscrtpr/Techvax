@@ -503,10 +503,11 @@ position: relative;
 top: 30px;
 left: 10px;
 & h1 {
-    border-bottom: 2px solid #ddd;
+    background: #e6e6ef;
     color: #000;
     margin-left: 1%;
     margin-bottom: 10px;
+    padding: 10px;
     font-size: 32px;
     text-align: left;
 }
