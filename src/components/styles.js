@@ -301,6 +301,7 @@ bottom: 0;
     background: #e6e6ef;
     height: auto; 
     margin: 10px;
+    padding-right: 10px;
     text-align: left;
     overflow: hidden;
     clear: left;
@@ -315,7 +316,7 @@ bottom: 0;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    left: 13px;
+    left: 15px;
 }
 & .cards ul a:hover {
     color: #ff4081;
@@ -334,7 +335,7 @@ bottom: 0;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    left: 13px;
+    left: 15px;
 }
 @media (max-width: 736px){
     & .search {
@@ -529,7 +530,7 @@ left: 10px;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    left: 13px;
+    left: 15px;
 }
 & ul a:hover {
     color: #ff4081;
@@ -548,7 +549,7 @@ left: 10px;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    left: 13px;
+    left: 15px;
 }
 @media (max-width: 736px){
     padding: 0;
