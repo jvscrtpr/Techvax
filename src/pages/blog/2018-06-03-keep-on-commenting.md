@@ -1,10 +1,10 @@
 ---
 templateKey: blog-post
-title: Keep on Commenting -The Importance of Writing Comments in Code
+title: Keep on Commenting The Importance of Comments in Code
 image: /img/comments.jpeg
 category: blog
 date: '2018-06-03T01:57:11-04:00'
-description: The Importance of Writing Comments in Code
+description: The Importance of Comments in Code
 tags:
   - blog
 ---
