@@ -9,7 +9,6 @@ import Footer from './footer';
 class Layout extends Component{
   state = {
     openMenu: false,
-    openSubscribe: false,
     search: '',
     openSearchbar: false
   }
