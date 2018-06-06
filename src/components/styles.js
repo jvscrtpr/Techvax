@@ -153,12 +153,14 @@ left: 0;
 & #banner {
     display: block;
     border-bottom: 1px solid #444;
-    background: trasparent;
+    background: #333;
     width: 91.5%;
     padding-top: 12px;
     padding-right: 15px;
     padding-left: 5px;
     padding-bottom: 12px;
+    position: sticky;
+    top: 0;
 }
 & #banner p {
     display: inline-block;
@@ -526,10 +528,10 @@ left: 10px;
 }
 & ul a {
     color: #000;
+    margin-bottom: 30px;
     font-size: 30px;
     text-decoration: none;
     position: relative;
-    top: 10px;
     left: 15px;
 }
 & ul a:hover {
@@ -549,7 +551,6 @@ left: 10px;
     margin-bottom: 10px;
     font-size: 18px;
     position: relative;
-    top: 25px;
     left: 15px;
 }
 @media (max-width: 736px){
