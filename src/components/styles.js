@@ -720,7 +720,7 @@ left: 10px;
     top: -10px;
 }
 & img {
-    width: 90%;
+    width: 100%;
 }
 & iframe {
     border: none;
