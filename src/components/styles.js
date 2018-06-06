@@ -799,7 +799,7 @@ left: 10px;
         width: 100%;
     }
     & h1 {
-        font-size: 23px;
+        font-size: 35px;
     }
     & #usr {
         padding: 5px;
