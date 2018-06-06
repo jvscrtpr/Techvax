@@ -55,7 +55,7 @@ padding-right: 0;
     float: right;
     padding: 5px;
     position: relative;
-    top: 4px;
+    top: 5px;
     right: 0;
 }
 & ul a {
