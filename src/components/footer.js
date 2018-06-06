@@ -14,12 +14,12 @@ class Footer extends Component{
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
         <Link to='/terms'>Terms</Link>
+        <Link to='/jobs'>Jobs</Link>
         <Link to='/privacy'>Privacy</Link>
-      </span>
-      <h1>&bull; Follow us &bull;</h1>
-      <a href='https://bit.ly/2HFWFB2' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></button></a>&bull;
-      <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>&bull;
-      <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>&bull;
+      </span><br/><br/>
+      <a href='https://bit.ly/2HFWFB2' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></button></a>
+      <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>
+      <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>
       <a href='https://bit.ly/2r7CHI6' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'youtube']} /></button></a>
       <ul>
         <p>&copy; 2018 | Techvax.com</p>
