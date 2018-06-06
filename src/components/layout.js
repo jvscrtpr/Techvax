@@ -38,7 +38,12 @@ class Layout extends Component{
         <Topbar searchChange={this.handleSearchChange} search={this.state.search} Menu={this.toggleMenu} Searchbar={this.toggleSearchbar} />
         <Searchbar open={this.state.openSearchbar}><span id='close' onClick={this.toggleSearchbar}>&times;</span></Searchbar>
         <Trendbar />
-        <Menu open={this.state.openMenu}><span id='close' onClick={this.toggleMenu}>&times;</span></Menu>
+        <Menu open={this.state.openMenu}>
+        <div id='banner'>
+          <p>Tech<span id='txt'>vax</span></p>
+          <span id='close' onClick={this.toggleMenu}>&times;</span>
+        </div>
+        </Menu>
         {this.props.children}
         {this.props.render && this.props.render(this.state.search)}
       </div>
