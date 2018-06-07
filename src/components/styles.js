@@ -822,7 +822,7 @@ export const FooterStyle = styled.div`
 background: #222;
 color: #fff;
 height: auto;
-margin-top: 80px;
+margin-top: 50px;
 padding-top: 20px;
 text-align: center;
 & #pagelinks a {
