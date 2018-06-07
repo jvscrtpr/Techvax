@@ -703,7 +703,7 @@ top: 30px;
 left: 10px;
 & h1 {
     color: #000;
-    margin-bottom: 30px !important;
+    margin-bottom: 20px !important;
     font-size: 52px;
     text-align: left;
 }
@@ -742,8 +742,8 @@ left: 10px;
 }
 & h2 {
     color: #000;
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
     font-size: 35px;
     text-align: left;
 }
