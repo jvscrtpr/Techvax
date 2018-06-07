@@ -502,7 +502,6 @@ left: 10px;
 & h1 {
     background: #e6e6ef;
     color: #000;
-    margin-left: 1%;
     margin-bottom: 10px;
     padding: 10px;
     font-size: 32px;
@@ -553,9 +552,6 @@ left: 10px;
 }
 @media (max-width: 736px){
     padding: 0;
-    & h1 {
-        margin-left: 0;
-    }
     & ul {
         width: auto !important;
         padding: 0;
@@ -747,47 +743,13 @@ left: 10px;
     font-size: 35px;
     text-align: left;
 }
-& .follow {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-}
 & h3 {
     color: #000;
     margin-bottom: 10px;
     font-size: 30px;
 }
-& .follow a {
-    margin: 0 1vw;
-}
-& .btn {
-    outline: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    background: #899FA9;
-    color: #fff;
-    height: 48px;
-    width: 48px;
-    font-size: 20px;
-}
-& .btn:hover {
-    background: #ff4081;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-    transition: 0.5s;
-}
-& .follow a {
-    display: inline-block;
-    border-bottom: none;
-    margin: 0 1vw;
-    padding: 0;
-}
 @media (max-height: 414px){
-    & iframe {
+    & #vid {
         height: 315px !important;
         width: 100%;
     }
@@ -795,7 +757,7 @@ left: 10px;
 @media (max-width: 736px){
     position: relative;
     top: 0;
-    & iframe {
+    & #vid {
         height: 200px;
         width: 100%;
     }
@@ -813,16 +775,13 @@ left: 10px;
     margin-bottom: 20px;
     position: relative;
     left: 0;
-    & .follow {
-        display: block;
-    }
 }
 `;
 export const FooterStyle = styled.div`
 background: #222;
 color: #fff;
 height: auto;
-margin-top: 50px;
+margin-top: 70px;
 padding-top: 20px;
 text-align: center;
 & #pagelinks a {
