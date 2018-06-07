@@ -694,7 +694,6 @@ right: .5%;
 export const ArticalStyle = styled.div`
 height: auto;
 width: 75%;
-margin-bottom: 60px;
 padding: 10px;
 text-align: center;
 position: relative;
@@ -774,7 +773,6 @@ left: 10px;
 }
 @media (max-width: 991px){
     width: auto;
-    margin-bottom: 20px;
     position: relative;
     left: 0;
 }
