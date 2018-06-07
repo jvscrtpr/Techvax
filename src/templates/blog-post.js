@@ -24,16 +24,12 @@ export const BlogPostTemplate = ({
     identifier: url,
     title
   };
-  const disqusStyle = {
-    boxShadow: 'none',
-    marginTop: '10px'
-  };
   return (
     <ArticalStyle>
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
-      <PostContent content={content} />
-      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} style={disqusStyle} />
+      <PostContent content={content} style={{ marginBottom: 10 + 'px' }} />
+      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </ArticalStyle>
   );
 };
