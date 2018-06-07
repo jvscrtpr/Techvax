@@ -738,7 +738,7 @@ left: 10px;
     font-size: 18px;
 }
 & p:last-child {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 & h2 {
     color: #000;
