@@ -22,8 +22,7 @@ export const BlogPostTemplate = ({
   const disqusConfig = {
     url: 'https://techvax.netlify.com'+url,
     identifier: url,
-    title,
-    style: `box-shadow: none; margin-top: 10px;`
+    title
   };
   return (
     <ArticalStyle>
