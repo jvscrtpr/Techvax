@@ -32,6 +32,7 @@ export const BlogPostTemplate = ({
       <Disqus.DiscussionEmbed
         shortname={disqusShortname}
         config={disqusConfig}
+        style={{ boxShaddow: 'none', marginTop: 10 + 'px' }}
       />
     </ArticalStyle>
   );
