@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content;
   const disqusShortname = 'techvax';
   const disqusConfig = {
-    url,
+    url: 'https://techvax.netlify.com'+url,
     identifier: url,
     title
   };
