@@ -525,7 +525,6 @@ left: 10px;
 }
 & ul a {
     color: #000;
-    margin-bottom: 15px !important;
     font-size: 30px;
     text-decoration: none;
     position: relative;
@@ -853,6 +852,7 @@ text-align: center;
     padding: 10px;
 }
 @media (max-width: 736px){
+    margin-top: 0 !important;
     & #pagelinks a, a {
         margin: 0 2vw;
     }
