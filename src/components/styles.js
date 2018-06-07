@@ -781,7 +781,7 @@ export const FooterStyle = styled.div`
 background: #222;
 color: #fff;
 height: auto;
-margin-top: 70px;
+margin-top: 60px;
 padding-top: 20px;
 text-align: center;
 & #pagelinks a {
@@ -855,7 +855,7 @@ text-align: center;
     }
 }
 @media (max-width: 991px){
-    margin-top: 50px;
+    margin-top: 30px;
 }
 `;
 export const FooterPagesStyle = styled.div`
