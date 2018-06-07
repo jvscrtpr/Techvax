@@ -852,7 +852,7 @@ text-align: center;
     padding: 10px;
 }
 @media (max-width: 736px){
-    margin-top: 8px !important;
+    margin-top: 10px !important;
     & #pagelinks a, a {
         margin: 0 2vw;
     }
