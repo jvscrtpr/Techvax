@@ -28,10 +28,11 @@ export const BlogPostTemplate = ({
     <ArticalStyle>
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
-      <PostContent content={content} />
+      <PostContent content={content} style={{ marginBottom: 10 + 'px' }} />
       <Disqus.DiscussionEmbed
         shortname={disqusShortname}
         config={disqusConfig}
+        style={{ boxShadow: 'none' }}
       />
     </ArticalStyle>
   );
