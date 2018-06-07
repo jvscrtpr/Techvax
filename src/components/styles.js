@@ -553,6 +553,9 @@ left: 10px;
 }
 @media (max-width: 736px){
     padding: 0;
+    & h1 {
+        margin-left: 0;
+    }
     & ul {
         width: auto !important;
         padding: 0;
