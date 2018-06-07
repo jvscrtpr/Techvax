@@ -525,7 +525,7 @@ left: 10px;
 }
 & ul a {
     color: #000;
-    margin-bottom: 30px;
+    margin-bottom: 15px !important;
     font-size: 30px;
     text-decoration: none;
     position: relative;
@@ -742,7 +742,6 @@ left: 10px;
 }
 & h2 {
     color: #000;
-    margin-top: 10px !important;
     margin-bottom: 10px !important;
     font-size: 35px;
     text-align: left;
