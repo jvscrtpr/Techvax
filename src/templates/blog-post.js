@@ -22,18 +22,16 @@ export const BlogPostTemplate = ({
   const disqusConfig = {
     url: 'https://techvax.netlify.com'+url,
     identifier: url,
-    title
+    title,
+    boxShadow: 'none',
+    marginTop: 10 + 'px'
   };
   return (
     <ArticalStyle>
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
-      <PostContent content={content} style={{ marginBottom: 10 + 'px' }} />
-      <Disqus.DiscussionEmbed
-        shortname={disqusShortname}
-        config={disqusConfig}
-        style={{ boxShadow: 'none' }}
-      />
+      <PostContent content={content} />
+      <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </ArticalStyle>
   );
 };
