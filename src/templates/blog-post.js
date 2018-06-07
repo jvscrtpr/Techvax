@@ -22,7 +22,8 @@ export const BlogPostTemplate = ({
   const disqusConfig = {
     url: 'https://techvax.netlify.com'+url,
     identifier: url,
-    title
+    title,
+    style: `box-shadow: none; margin-top: 10px;`
   };
   return (
     <ArticalStyle>
@@ -32,7 +33,6 @@ export const BlogPostTemplate = ({
       <Disqus.DiscussionEmbed
         shortname={disqusShortname}
         config={disqusConfig}
-        style={{ boxShadow: 'none', marginTop: 10 + 'px' }}
       />
     </ArticalStyle>
   );
