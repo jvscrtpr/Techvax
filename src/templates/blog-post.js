@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { kebabCase } from 'lodash';
+import Disqus from 'disqus-react';
 import { ArticalStyle } from '../components/styles';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
@@ -13,27 +14,25 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  helmet
+  helmet,
+  url
 }) => {
   const PostContent = contentComponent || Content;
-
+  const disqusShortname = 'techvax';
+  const disqusConfig = {
+    url,
+    identifier: url,
+    title
+  };
   return (
     <ArticalStyle>
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
       <PostContent content={content} />
-      {tags && tags.length ? (
-        <div style={{ marginTop: `4rem` }}>
-          <h4>Tags</h4>
-          <ul className="taglist">
-            {tags.map(tag => (
-              <li key={tag + `tag`}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+      <Disqus.DiscussionEmbed
+        shortname={disqusShortname}
+        config={disqusConfig}
+      />
     </ArticalStyle>
   );
 };
@@ -43,7 +42,6 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet)
 };
 
 const BlogPost = ({ data }) => {
@@ -59,6 +57,8 @@ const BlogPost = ({ data }) => {
         helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        url={post.fields.slug}
+        id={post.id}
       />
     </React.Fragment>
   );
@@ -75,8 +75,10 @@ export default BlogPost;
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
-      id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
