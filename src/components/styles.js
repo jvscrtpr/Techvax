@@ -723,7 +723,7 @@ left: 10px;
 & img {
     width: 100%;
 }
-& iframe {
+& #vid {
     border: none;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
     -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
