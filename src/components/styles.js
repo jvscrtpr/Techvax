@@ -228,7 +228,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background: linear-gradient(50deg, #12c2e9, #c471ed, #f64f59);
+background: linear-gradient(50deg, rgba(18,194,233,.95), rgba(196,113,237,.95), rgba(246,79,89,.95));
 height: 100%;
 width: 100%;
 text-align: center;
