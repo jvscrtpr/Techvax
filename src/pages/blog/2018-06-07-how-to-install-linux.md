@@ -24,7 +24,7 @@ With Windows inside there EULA you know the thing that you just hit accept witho
 
 <span id='break'>&bull; &bull; &bull;</span><br/>
 
-<h2>Installing Part</h2>
+<h2 style='text-align: center;'>Installing Part</h2>
 
 <h2>Step One</h2>
 
