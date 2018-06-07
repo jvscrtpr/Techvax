@@ -703,7 +703,7 @@ top: 30px;
 left: 10px;
 & h1 {
     color: #000;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-size: 52px;
     text-align: left;
 }
