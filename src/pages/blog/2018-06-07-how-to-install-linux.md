@@ -30,38 +30,46 @@ With Windows inside there EULA you know the thing that you just hit accept witho
 
 ![flashdrive](/img/flashdrive.jpeg)
 
-<span id='break'>&bull; &bull; &bull;</span><br/>
+<br/>
 
 You need a flash drive 4gb will do if you only have a 2gb one than that should work as well but now a days you can get a 16gb or 32gb real cheep at walmart or on amazon.
+
+<span id='break'>&bull; &bull; &bull;</span><br/>
 
 <h2>Step Two</h2>
 
 ![Ubuntu Download Site](/img/download.jpeg)
 
-<span id='break'>&bull; &bull; &bull;</span><br/>
+<br/>
 
 What you want to do is go to <a href='https://www.ubuntu.com/download/desktop' target='_blank' rel='noopener noreferrer'>ubuntu.com</a> and pick which version you want and hit the download button you will be brought to a new page where it says do you want to pay hit the no just take me to the download link.
+
+<span id='break'>&bull; &bull; &bull;</span><br/>
 
 <h2>Step Three</h2>
 
 ![UnetBootIn](/img/unetbootin.jpeg)
 
-<span id='break'>&bull; &bull; &bull;</span><br/>
+<br/>
 
 Go to <a href='https://unetbootin.github.io' target='_blank' rel='noopener noreferrer'>unetbootin.com</a> and download this tool to make a USB bootable flash drive they have steps to do so on there site.
+
+<span id='break'>&bull; &bull; &bull;</span><br/>
 
 <h2>Step Four</h2>
 
 ![Windows Bios](/img/bios.jpeg)
 
-<span id='break'>&bull; &bull; &bull;</span><br/>
+<br/>
 
 Ok so because of Windows 8 and up Microsoft put a flag in the BIOS making it a bit tricky getting Linux on your PC so what you have to do after you make your bootable drive is un-mount / un-plug it from the pc and restart and when you see a black screen as soon as the PC boots up spam what ever key it is for you to get into the boot menu some PC's its the esc key like on mine but others its the f12 key and so on and from there you should see a menu pop up that gives you options you want to select the option that says BIOS (CHANGE ONLY WHAT I TELL YOU AS THE BIOS CAN BE DANGEROUS) once in the BIOS you want to use the left and right arrow keys to go to the Boot tag then use the arrow up and down keys to go to SECURE BOOT turn that option off as this is what prevents Linux from being bootable to exit the BIOS and save just press f10 and your computer will reboot once it has done so turn it off again and insert your boodable drive and boot the pc while spaming the esc key or f12 key to open that menu again but this time your going to go to the option that says boot options select the one that shows your flash drive.
+
+<span id='break'>&bull; &bull; &bull;</span><br/>
 
 <h2>Step Five</h2>
 
 ![Ubuntu Welcome Screen](/img/ubuntuinstall.jpeg)
 
-<span id='break'>&bull; &bull; &bull;</span><br/>
+<br/>
 
 Let it all load up and with any luck you should see this screen above and now start to try Linux as well as Install it if you have any questions you can message me on my social media above and id be happy to help you with any questions you may have.
