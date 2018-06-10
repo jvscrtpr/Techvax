@@ -18,7 +18,7 @@ class Topbar extends Component{
       <Link to='/howto'>How To's</Link>
       <Link to='/reviews'>Reviews</Link>
       <Link to='/blog'>Blogs</Link>
-      <Link to='/error'>Shop</Link>
+      <Link to='/404'>Shop</Link>
       <ul>
         <a href='https://instagram.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
         <a href='https://instagram.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
