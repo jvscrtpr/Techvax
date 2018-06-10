@@ -23,7 +23,6 @@ class Topbar extends Component{
         <a href='https://instagram.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></a>
         <a href='https://instagram.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'instagram']} /></a>
         <a href='https://twitter.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'twitter']} /></a>
-        <a href='https://github.com/jvscrptr' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={['fab', 'youtube']} /></a>
         <a href='#' id='searchbtn' onClick={this.props.Searchbar}><FontAwesomeIcon icon={faSearch} /></a>
       </ul>
       </TopbarStyle>
