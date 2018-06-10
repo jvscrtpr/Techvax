@@ -1,4 +1,4 @@
-export const HomeNewsCards = [
+/*export const HomeNewsCards = [
 ];
 export const NewsCards = [
 ];
@@ -83,7 +83,7 @@ export const BlogCards = [
         dis: 'The importance to learn to code and how it can help you',
         href: '/blog1'
     }
-];
+];*/
 export const Team = [
     {
         img: require('../images/usrs/jvscrptr.jpeg'),
@@ -111,9 +111,9 @@ export const Team = [
     }
 ];
 export const Empty = [];
-export const newscards = HomeNewsCards;
+/*export const newscards = HomeNewsCards;
 export const reviewcards = HomeReviewCards;
 export const howtocards = HomeHowtoCards;
-export const blogcards = HomeBlogCards;
+export const blogcards = HomeBlogCards;*/
 export const Posted = BlogCards.length + ReviewCards.length;
 export const People = Team.length;
