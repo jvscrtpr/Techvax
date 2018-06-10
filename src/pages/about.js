@@ -11,7 +11,7 @@ import faNewspaper from '@fortawesome/fontawesome-free-solid/faNewspaper';
 class About extends Component{
   render(){
     return(
-    <Layout>
+    <div>
       <Helmet>
         <title>About us | Techvax.com</title>
       </Helmet>
@@ -50,7 +50,7 @@ class About extends Component{
           </div>
         )}
       </FooterPagesStyle>
-    </Layout>
+    </div>
     );
   }
 }
