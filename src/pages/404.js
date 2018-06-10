@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { ErrorStyle } from '../components/styles';
 
 const NotFoundPage = () => (
   <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <Helmet>
+      <title>404 | Techvax.com</title>
+    </Helmet>
+    <ErrorStyle>
+      <h1>404</h1>
+      <p>We are sorry the page seems to not exist or <br/> we are currently working on it.</p>
+    </ErrorStyle>
   </div>
 )
 
