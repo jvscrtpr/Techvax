@@ -591,7 +591,7 @@ float: right;
 clear: both;
 height: auto;
 width: 20%;
-margin-top: 30px;
+margin-top: 50px;
 padding: 0 10px;
 text-align: center;
 position: sticky;
