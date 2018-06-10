@@ -20,7 +20,7 @@ class Menu extends Component{
         <Link to='/howto' onClick={this.props.open}><FontAwesomeIcon icon={faChessKing} /> How To's</Link>
         <Link to='/reviews' onClick={this.props.open}><FontAwesomeIcon icon={faLaptop} /> Reviews</Link>
         <Link to='/blog' onClick={this.props.open}><FontAwesomeIcon icon={faPencilAlt} /> Blog</Link>
-        <Link to='/error' onClick={this.props.open}><FontAwesomeIcon icon={faShoppingBag} /> Shop</Link>
+        <Link to='/404' onClick={this.props.open}><FontAwesomeIcon icon={faShoppingBag} /> Shop</Link>
       </MenuStyle> : null }
     </React.Fragment>
     );
