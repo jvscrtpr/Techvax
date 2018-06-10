@@ -30,7 +30,7 @@ class About extends Component{
         </ul>
         <ul>
           <FontAwesomeIcon id='icon' icon={faNewspaper} />
-          <h1>{Posted}</h1>
+          <h1>5</h1>
           <p>Articles posted</p>
         </ul>
         <div id='leftstuff'>
