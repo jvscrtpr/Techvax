@@ -92,12 +92,6 @@ export const Team = [
         href: 'https://twitter.com/jvscrptr'
     },
     {
-        img: require('../images/usrs/jesse.jpeg'),
-        name: 'Jesse W.',
-        dis: 'App Dev',
-        href: 'https://twitter.com/JesseRWeigel'
-    },
-    {
         img: require('../images/usrs/harshit.jpeg'),
         name: 'Harshit P.',
         dis: 'Co-Dev',
