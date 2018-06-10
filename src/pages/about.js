@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import { Posted, Team, People } from '../components/cards';
+import { Team, People } from '../components/team';
 import { FooterPagesStyle } from '../components/styles';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faFlag from '@fortawesome/fontawesome-free-solid/faFlag';
