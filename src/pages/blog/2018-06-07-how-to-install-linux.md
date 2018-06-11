@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: How to install Linux
+title: How to install Linux and why you should
 image: /img/ubuntu.jpeg
 category: how-to
 date: '2018-06-07T14:56:57-04:00'
@@ -9,9 +9,9 @@ tags:
   - how-to
 author:
   image: /img/t92svkrbj-u93dqaesf-cee34ea7ec7f-512.png
+  instagram: 'https://instagram.com/jvscrptr'
   name: Jvscrptr
   twitter: 'https://twitter.com/jvscrptr'
-  instagram: 'https://instagram.com/jvscrptr'
 ---
 ![Ubuntu](/img/ubuntu.jpeg)
 
