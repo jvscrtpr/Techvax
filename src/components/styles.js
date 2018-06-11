@@ -735,9 +735,6 @@ left: 10px;
     color: #000;
     font-size: 18px;
 }
-& p:last-child {
-    margin-bottom: 30px;
-}
 & h2 {
     color: #000;
     margin-bottom: 10px !important;
