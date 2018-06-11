@@ -30,11 +30,9 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
       <PostContent content={content} />
-      {/* Author styles here */}
-      <div>
-          <h2>Styling in todo on author see /src/templates/blog-post.js file</h2>
-          <h3>{author.name}</h3>
-          <img src={author.image} alt=""/>
+      <div className='author'>
+          <img src={author.image} alt='' className='usrimg' />
+          <h1>{author.name}</h1>
           <a href={author.twitter}>Twitter</a>
           <a href={author.instagram}>Instagram</a>
       </div>
