@@ -20,3 +20,11 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Author"
+        name: "author"
+        widget: "object"
+        fields: 
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Twitter", name: "twitter", widget: "string"}
+          - {label: "Instagram", name: "twitter", widget: "string"}
