@@ -818,7 +818,7 @@ left: 10px;
     }
     & .author h1 {
         position: relative;
-        top: 20px;
+        top: 23px;
         left: 0;
     }
     & .usrimg {
@@ -904,6 +904,7 @@ text-align: center;
     padding: 10px;
 }
 @media (max-width: 736px){
+    margin-top: 50px;
     & #pagelinks a, a {
         margin: 0 2vw;
     }
