@@ -7,6 +7,10 @@ import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 import Sidebar from '../components/sidebar';
 import Content, { HTMLContent } from '../components/Content';
+import fontawesome from '@fortawesome/fontawesome';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import brands from '@fortawesome/fontawesome-free-brands';
+fontawesome.library.add(brands);
 
 export const BlogPostTemplate = ({
   content,
@@ -33,8 +37,8 @@ export const BlogPostTemplate = ({
       <div className='author'>
           <img src={author.image} alt='' className='usrimg' />
           <h1>{author.name}</h1>
-          <a href={author.twitter}>Twitter</a>
-          <a href={author.instagram}>Instagram</a>
+          <a href={author.instagram} target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>
+          <a href={author.twitter} target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>
       </div>
       <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </ArticalStyle>
