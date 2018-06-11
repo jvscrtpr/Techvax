@@ -27,4 +27,4 @@ collections:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Twitter", name: "twitter", widget: "string"}
-          - {label: "Instagram", name: "twitter", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
