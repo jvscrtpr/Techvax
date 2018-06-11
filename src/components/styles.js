@@ -754,20 +754,22 @@ left: 10px;
     height: auto;
     margin-bottom: 30px;
     padding: 10px;
+    text-align: left;
 }
 & .usrimg {
     float: left;
-    display: inline-block;
-    border-radius: 6px;
+    border-radius: 50%;
+    height: auto;
     height: 70px;
     width: 70px;
 }
 & .author h1 {
-    float: left;
-    display: inline-block;
+    color: #000;
     font-size: 30px;
+    text-decoration: none;
     position: relative;
-    left: 15px;
+    top: 15px;
+    left: 10px;
 }
 & .author a {
     margin: 0 1vw;
@@ -775,7 +777,6 @@ left: 10px;
 }
 & .btn {
     float: right;
-    display: inline-block;
     outline: none;
     cursor: pointer;
     border: none;
@@ -784,11 +785,10 @@ left: 10px;
     color: #fff;
     height: 48px;
     width: 48px;
-    margin: 0 1vw;
+    margin: 0 .5vw;
     font-size: 20px;
     position: relative;
-    top: 15px;
-    right: 20px;
+    top: -40px;
 }
 & .btn:hover {
     background: #ff4081;
@@ -819,6 +819,13 @@ left: 10px;
         padding: 5px;
         position: relative;
         top: 0;
+    }
+    & .author h1 {
+        position: relative;
+        left: 0;
+    }
+    & .usrimg {
+        display: none;
     }
 }
 @media (max-width: 991px){
