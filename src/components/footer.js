@@ -11,7 +11,7 @@ class Footer extends Component{
     return(
     <FooterStyle>
       <ul>
-        <img src={require('../../img/logo.png')} alt='' className='logo' />
+        <img src={require('../img/logo.png')} alt='' className='logo' />
       </ul>
       <span id='pagelinks'>
         <Link to='/'>Home</Link>
@@ -23,7 +23,7 @@ class Footer extends Component{
       <a href='https://bit.ly/2HFWFB2' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'facebook-f']} /></button></a>
       <a href='https://instagram.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>
       <a href='https://twitter.com/techflask' target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a><br id='br' />
-      <img src={require('../../img/search-by-algolia.png')} alt='' className='searchlogo' />
+      <img src={require('../img/search-by-algolia.png')} alt='' className='searchlogo' />
       <ul style={{ marginBottom: 0 }}>
         <p>&copy; 2018 | Techvax</p>
       </ul>
