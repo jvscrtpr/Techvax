@@ -442,7 +442,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center center;
 background-size: cover;
-background-image: url('https://media.giphy.com/media/xT4uQF7h39mlsF5czK/giphy.gif');
+background-image: url('https://media.giphy.com/media/l3q2Cy90VMhfoA9BC/giphy.gif');
 box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
