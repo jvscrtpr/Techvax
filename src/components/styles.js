@@ -750,19 +750,24 @@ left: 10px;
     font-size: 30px;
 }
 & .author {
-    border-radius: 6px;
-    background: #e6e6ef;
+    border-bottom: 2px solid #e6e6ef;
     height: auto;
+    margin-bottom: 30px;
+    padding: 10px;
 }
 & .usrimg {
     float: left;
     display: inline-block;
     border-radius: 6px;
-    width: 28%;
+    height: 70px;
+    width: 70px;
 }
 & .author h1 {
+    float: left;
     display: inline-block;
     font-size: 30px;
+    position: relative;
+    left: 15px;
 }
 & .author a {
     margin: 0 1vw;
@@ -779,6 +784,7 @@ left: 10px;
     color: #fff;
     height: 48px;
     width: 48px;
+    margin: 0 1vw;
     font-size: 20px;
     position: relative;
     top: 15px;
