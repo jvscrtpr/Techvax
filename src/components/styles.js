@@ -750,7 +750,6 @@ left: 10px;
     border-bottom: 2px solid #e6e6ef;
     height: auto;
     margin-bottom: 30px;
-    padding: 10px;
     text-align: left;
 }
 & .usrimg {
@@ -819,7 +818,6 @@ left: 10px;
     }
     & .author h1 {
         position: relative;
-        top: 20px;
         left: 0;
     }
     & .usrimg {
