@@ -448,9 +448,7 @@ box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
-height: auto;
-padding-top: 120px;
-padding-bottom: 120px;
+height: 75vh;
 & ul {
     background: rgba(230,230,239,0.8);
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
@@ -476,8 +474,17 @@ padding-bottom: 120px;
     font-size: 18px;
     text-align: left;
 }
+@media (height: 1024px){
+    height: 30vh;
+    padding: 30px 0;
+}
+@media (height: 1280px){
+    height: 30vh;
+    padding: 30px 0;
+}
 @media (max-width: 736px){
-    padding: 10px;
+    height: 30vh;
+    padding: 30px 0;
     & ul {
         width: 90% !important;
         padding: 10px;
