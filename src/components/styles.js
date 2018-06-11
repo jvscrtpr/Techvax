@@ -819,6 +819,7 @@ left: 10px;
     }
     & .author h1 {
         position: relative;
+        top: 20px;
         left: 0;
     }
     & .usrimg {
