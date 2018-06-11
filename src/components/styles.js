@@ -749,6 +749,44 @@ left: 10px;
     margin-bottom: 10px;
     font-size: 30px;
 }
+& .author {
+    background: #e6e6ef;
+    height: auto;
+    padding: 10px;
+}
+& .usrimg {
+    float: left;
+    display: inline-block;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+& .author h1 {
+    display: inline-block;
+}
+& .btn {
+    float: right;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #899FA9;
+    color: #fff;
+    height: 48px;
+    width: 48px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+& .btn:hover {
+    background: #ff4081;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -ms-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    -o-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
+    transition: 0.5s;
+}
 @media (max-height: 414px){
     & #vid {
         height: 315px !important;
