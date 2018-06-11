@@ -442,7 +442,7 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: center center;
 background-size: cover;
-background-image: url('https://source.unsplash.com/EG49vTtKdvI');
+background-image: url('https://source.unsplash.com/fPkvU7RDmCo');
 clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
 -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16);
