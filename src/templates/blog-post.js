@@ -15,7 +15,8 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
-  url
+  url,
+  author
 }) => {
   const PostContent = contentComponent || Content;
   const disqusShortname = 'techvax';
@@ -29,6 +30,14 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <h1 style={{ marginBottom: 10 + 'px' }}>{title}</h1>
       <PostContent content={content} />
+      {/* Author styles here */}
+      <div>
+          <h2>Styling in todo on author see /src/templates/blog-post.js file</h2>
+          <h3>{author.name}</h3>
+          <img src={author.image} alt=""/>
+          <a href={author.twitter}>Twitter</a>
+          <a href={author.instagram}>Instagram</a>
+      </div>
       <Disqus.DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
     </ArticalStyle>
   );
@@ -56,6 +65,7 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
         url={post.fields.slug}
         id={post.id}
+        author={post.frontmatter.author}
       />
     </React.Fragment>
   );
@@ -81,6 +91,12 @@ export const pageQuery = graphql`
         title
         description
         tags
+        author{
+          name
+          image
+          twitter
+          instagram
+        }
       }
     }
   }

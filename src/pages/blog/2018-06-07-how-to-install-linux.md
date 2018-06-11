@@ -7,6 +7,11 @@ date: '2018-06-07T14:56:57-04:00'
 description: We here at Techvax show you how to install Linux OS
 tags:
   - how-to
+author:
+  image: /img/t92svkrbj-u93dqaesf-cee34ea7ec7f-512.png
+  name: Jvscrptr
+  twitter: 'https://twitter.com/jvscrptr'
+  instagram: 'https://instagram.com/jvscrptr'
 ---
 ![Ubuntu](/img/ubuntu.jpeg)
 

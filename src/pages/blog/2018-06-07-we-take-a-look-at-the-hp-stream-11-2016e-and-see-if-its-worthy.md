@@ -11,6 +11,7 @@ author:
   image: /img/t92svkrbj-u93dqaesf-cee34ea7ec7f-512.png
   name: Jvscrptr
   twitter: 'https://twitter.com/jvscrptr'
+  instagram: 'https://instagram.com/jvscrptr'
 ---
 ![HP Stream 11 2016E](/img/hpstream.jpeg)
 
