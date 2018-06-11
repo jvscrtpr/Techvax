@@ -763,6 +763,9 @@ left: 10px;
 }
 & .author h1 {
     display: inline-block;
+    font-size: 35px;
+    position: relative;
+    left: 15px;
 }
 & .btn {
     float: right;
