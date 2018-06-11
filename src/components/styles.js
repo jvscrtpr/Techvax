@@ -750,22 +750,23 @@ left: 10px;
     font-size: 30px;
 }
 & .author {
+    border-radius: 6px;
     background: #e6e6ef;
     height: auto;
-    padding: 10px;
 }
 & .usrimg {
     float: left;
     display: inline-block;
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
+    border-radius: 6px;
+    width: 28%;
 }
 & .author h1 {
     display: inline-block;
-    font-size: 35px;
-    position: relative;
-    left: 15px;
+    font-size: 30px;
+}
+& .author a {
+    margin: 0 1vw;
+    text-decoration: none;
 }
 & .btn {
     float: right;
@@ -778,8 +779,10 @@ left: 10px;
     color: #fff;
     height: 48px;
     width: 48px;
-    margin-bottom: 30px;
     font-size: 20px;
+    position: relative;
+    top: 15px;
+    right: 20px;
 }
 & .btn:hover {
     background: #ff4081;
