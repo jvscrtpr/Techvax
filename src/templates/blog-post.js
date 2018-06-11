@@ -36,7 +36,7 @@ export const BlogPostTemplate = ({
       <PostContent content={content} />
       <div className='author'>
           <img src={author.image} alt='' className='usrimg' />
-          <h1>{author.name}</h1>
+          <h1>By: {author.name}</h1>
           <a href={author.instagram} target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'instagram']} /></button></a>
           <a href={author.twitter} target='_blank' rel='noopener noreferrer'><button className='btn'><FontAwesomeIcon icon={['fab', 'twitter']} /></button></a>
       </div>
