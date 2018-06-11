@@ -7,6 +7,10 @@ date: '2018-06-07T14:30:37-04:00'
 description: We take a look at the HP Stream 11 2016E and let you know what we think of it
 tags:
   - reviews
+author:
+  image: /img/t92svkrbj-u93dqaesf-cee34ea7ec7f-512.png
+  name: Jvscrptr
+  twitter: 'https://twitter.com/jvscrptr'
 ---
 ![HP Stream 11 2016E](/img/hpstream.jpeg)
 
