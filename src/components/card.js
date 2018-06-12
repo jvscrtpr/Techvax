@@ -13,8 +13,7 @@ export default class Card extends React.Component {
             {card.frontmatter.title} <FontAwesomeIcon id="arrow" icon={faArrowRight} />
           </Link>
           <p>{card.excerpt}</p>
-          {/* Can you also add to artical title inside the <h1 /> JSX element and use id='usr' something like so <h1>{title}<span id='usr'>Posted by: {User}</span></h1> */}
-          <p id="postusr">Will add later</p>
+          <p id="postusr">{card.frontmatter.author.name}</p>
         </ul>
     );
   }
