@@ -80,6 +80,19 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'TechVax',
+        short_name: 'TechVax',
+        start_url: '/',
+        background_color: '#fff',
+        theme_color: '#333',
+        display: 'minimal-ui',
+        icon: 'src/img/logo.svg',
+      },
+    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
