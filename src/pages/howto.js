@@ -49,6 +49,12 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
+            author{
+              name
+              image
+              twitter
+              instagram
+            }
             title
             image
             templateKey
