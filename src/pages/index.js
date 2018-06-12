@@ -69,6 +69,12 @@ export const pageQuery = graphql`
             category
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            author{
+              name
+              image
+              twitter
+              instagram
+            }
           }
         }
       }
