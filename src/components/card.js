@@ -13,7 +13,8 @@ export default class Card extends React.Component {
             {card.frontmatter.title} <FontAwesomeIcon id="arrow" icon={faArrowRight} />
           </Link>
           <p>{card.excerpt}</p>
-          <pre>{JSON.stringify(card,null,2)}</pre>
+          <p id="postusr">{card.frontmatter.author.name}</p>
+
         </ul>
     );
   }
