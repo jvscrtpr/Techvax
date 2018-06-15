@@ -17,7 +17,6 @@ const CustomHits = connectHits(({ hits }) => (
           <FontAwesomeIcon id="arrow" icon={faArrowRight} />
         </a>
         <p>{card.excerpt}</p>
-        <p id="postusr">{card.frontmatter.author.name}</p>
       </ul>
     ))}
   </div>
