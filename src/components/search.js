@@ -9,16 +9,16 @@ import { connectSearchBox, connectHits } from 'react-instantsearch/connectors';
 
 const CustomHits = connectHits(({ hits }) => (
   <div className="cards">
-    {hits.map(card => (
-      <ul key={card.objectID}>
-        <img src={card.frontmatter.image} alt="" className="img" />
-        <a href={card.fields.slug}>
-          {card.frontmatter.title}{' '}
-          <FontAwesomeIcon id="arrow" icon={faArrowRight} />
+    { hits.map(card => (
+      <ul key={ card.objectID }>
+        <img src={ card.frontmatter.image } alt="" className="img" />
+        <a href={ card.fields.slug }>
+          { card.frontmatter.title }{ ' ' }
+          <FontAwesomeIcon id="arrow" icon={ faArrowRight } />
         </a>
-        <p>{card.excerpt}</p>
+        <p>{ card.excerpt }</p>
       </ul>
-    ))}
+    )) }
   </div>
 ));
 
@@ -30,8 +30,8 @@ const MySearchBox = ({ currentRefinement, refine }) => (
     autoCorrect="off"
     type="text"
     placeholder="Search Techvax..."
-    value={currentRefinement}
-    onChange={e => refine(e.target.value)}
+    value={ currentRefinement }
+    onChange={ e => refine(e.target.value) }
     type="text"
     className="search"
   />
@@ -43,19 +43,17 @@ class Searchbar extends Component {
   render() {
     return (
       <InstantSearch
-        appId={process.env.GATSBY_APP_ID}
-        apiKey={process.env.GATSBY_SEARCH_API_KEY}
+        appId={ process.env.GATSBY_APP_ID }
+        apiKey={ process.env.GATSBY_SEARCH_API_KEY }
         indexName="blog">
-        <Configure hitsPerPage={4} />
-        <React.Fragment>
-          {this.props.open ? (
-            <SearchStyle>
-              {this.props.children}
-              <ConnectedSearchBox />
-              <CustomHits />
-            </SearchStyle>
-          ) : null}
-        </React.Fragment>
+        <Configure hitsPerPage={ 4 } />
+        { this.props.open ? (
+          <SearchStyle>
+            { this.props.children }
+            <ConnectedSearchBox />
+            <CustomHits />
+          </SearchStyle>
+        ) : null }
       </InstantSearch>
     );
   }
