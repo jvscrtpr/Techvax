@@ -8,20 +8,7 @@ import { ContentStyle } from '../components/styles';
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
-    const news = posts.filter(
-      ({ node: val }) => val.frontmatter.category == 'news'
-    );
-    const howto = posts.filter(
-      ({ node: val }) => val.frontmatter.category == 'how-to'
-    );
-    const reviews = posts.filter(
-      ({ node: val }) => val.frontmatter.category == 'review'
-    );
-    const blog = posts.filter(
-      ({ node: val }) => val.frontmatter.category == 'blog'
-    );
+    const { data: { news, howto, reviews, blog } } = this.props;
 
     return (
       <React.Fragment>
@@ -29,13 +16,13 @@ export default class IndexPage extends React.Component {
         <Sidebar />
         <ContentStyle>
           <h1>Latest News</h1>
-          {news.map(({ node: post }) => <Card card={post} />)}
+          { news.edges.map(({ node: post }) => <Card card={ post } key={ post.id } />) }
           <h1>Latest How to's</h1>
-          {howto.map(({ node: post }) => <Card card={post} />)}
+          { howto.edges.map(({ node: post }) => <Card card={ post } key={ post.id } />) }
           <h1>Latest Reviews</h1>
-          {reviews.map(({ node: post }) => <Card card={post} />)}
+          { reviews.edges.map(({ node: post }) => <Card card={ post } key={ post.id } />) }
           <h1>Latest Articles</h1>
-          {blog.map(({ node: post }) => <Card card={post} />)}
+          { blog.edges.map(({ node: post }) => <Card card={ post } key={ post.id } />) }
         </ContentStyle>
       </React.Fragment>
     );
@@ -50,34 +37,47 @@ IndexPage.propTypes = {
   })
 };
 
-export const pageQuery = graphql`
-  query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 35)
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            image
-            category
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-            author{
-              name
-              image
-              twitter
-              instagram
-            }
-          }
+export const DataFragment = graphql`
+fragment Data on MarkdownRemarkConnection {
+  edges {
+    node {
+      excerpt(pruneLength: 35)
+      id
+      fields {
+        slug
+      }
+      frontmatter {
+        title
+        image
+        category
+        templateKey
+        date(formatString: "MMMM DD, YYYY")
+        author {
+          name
+          image
+          twitter
+          instagram
         }
       }
     }
   }
+}
+
+`
+
+export const pageQuery = graphql`
+  query IndexQuery {
+  howto: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "how-to"}}}, limit: 4) {
+    ...Data
+  }
+   news: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "news"}}}, limit: 4) {
+    ...Data
+  }
+   reviews: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "review"}}}, limit: 4) {
+    ...Data
+  }
+   blog: allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}, filter: {frontmatter: {category: {eq: "blog"}}}, limit: 4) {
+    ...Data
+  }
+}
 `;
