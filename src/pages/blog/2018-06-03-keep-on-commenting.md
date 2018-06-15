@@ -8,7 +8,7 @@ description: The Importance of Comments in Code
 tags:
   - blog
 author:
-  image: /img/t92svkrbj-u93dqaesf-cee34ea7ec7f-512.png
+  image: /img/rea.jpg
   instagram: 'https://www.instagram.com/reanewellwebdev/'
   name: Rea Newell
   twitter: 'https://twitter.com/reanewell'
