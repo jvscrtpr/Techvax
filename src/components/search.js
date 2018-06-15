@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { SearchStyle } from './styles';
 import Link from 'gatsby-link';
 import Card from './card';
-import { InstantSearch } from 'react-instantsearch/dom';
+import { InstantSearch, Configure } from 'react-instantsearch/dom';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faArrowRight from '@fortawesome/fontawesome-free-solid/faArrowRight';
 import { connectSearchBox, connectHits } from 'react-instantsearch/connectors';
@@ -48,6 +48,7 @@ class Searchbar extends Component {
         appId={process.env.GATSBY_APP_ID}
         apiKey={process.env.GATSBY_SEARCH_API_KEY}
         indexName="blog">
+        <Configure hitsPerPage={4} />
         <React.Fragment>
           {this.props.open ? (
             <SearchStyle>
